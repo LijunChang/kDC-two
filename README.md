@@ -44,7 +44,7 @@ $ ./kDC -g {path_to_graph} -k {k_value}
 
 #### 3. Run the algorithms kDC-two and kDC
 
-Comment out #define \_RR\_OPT\_ in Utility.h, and then recompile the code
+Comment out `#define \_RR\_OPT\_` in `Utility.h`, and then recompile the code
 
 Run kDC-two
 ```sh
