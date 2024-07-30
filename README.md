@@ -44,7 +44,7 @@ $ ./kDC -g {path_to_graph} -k {k_value}
 
 #### 3. Run the algorithms kDC-two and kDC
 
-Comment out #define _RR_OPT_ in Utility.h, and then recompile the code
+Comment out #define \_RR\_OPT\_ in Utility.h, and then recompile the code
 
 Run kDC-two
 ```sh
@@ -58,6 +58,8 @@ $ ./kDC -g {path_to_graph} -k {k_value}
 
 ## Data format
 Two data formats are supported. The default data format is "edges.txt", which contains a list of undirected edges represented as vertex pairs. The first line contains two numbers n and m, representing the number of vertices and the number of undirected edges, respectively. Note that, the vertex ids must be between 0 and n-1.
+
+The more time-efficient format is the binary format; to read the input graph from this format, please add "-b" when running the code. Each graph is represented by two binary files, b_adj.bin and b_degree.bin (e.g. datasets/CA-GrQc/b_adj.bin and datasets/CA-GrQc/b_degree.bin). More details of the data format can be found in [https://lijunchang.github.io/Cohesive_subgraph_book/datasets](https://lijunchang.github.io/Cohesive_subgraph_book/datasets)
 
 ## Get datasets
 Real-world graphs collection: http://lcs.ios.ac.cn/~caisw/Resource/realworld%20graphs.tar.gz
